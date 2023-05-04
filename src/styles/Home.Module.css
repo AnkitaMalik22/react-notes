@@ -1,0 +1,27 @@
+.home {
+  width: 70%;
+  position: fixed;
+  right: 0;
+}
+.home-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.home-des {
+  width: 50%;
+  line-height: 1.5rem;
+}
+
+.bottom-txt {
+  position: fixed;
+  bottom: 1rem;
+  left: 55%;
+}
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+  .home {
+    display: none;
+  }
+}
