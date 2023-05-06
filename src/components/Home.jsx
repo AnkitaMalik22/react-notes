@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Home.Module.css";
 import homeImg from "../assets/home.png";
 
-const Home = () => {
+const Home = ({noteBtnClick,isMobile}) => {
+  const [noteGroups,setNoteGroups]=useState(JSON.parse(localStorage.getItem("noteGroups")));
+  useEffect(()=>{
+    setNoteGroups(JSON.parse(localStorage.getItem("noteGroups")))
+  },[noteBtnClick])
+
+  
   return (
-    <div className="home flex">
-      <img src={homeImg} alt="img" width="400px" />
+    <div className={`home ${noteGroups && isMobile && noteGroups.length>0 ? "none" : "flex"}`}>
+      <img src={homeImg} alt="img" width="400px" className="home-img" />
       <p className="home-title">Pocket Notes</p>
       <p className="home-des">
         Send and receive messages without keeping your phone online. Use Pocket

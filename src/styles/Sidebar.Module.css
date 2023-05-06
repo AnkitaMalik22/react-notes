@@ -13,6 +13,9 @@
   color: var(--black-color);
   font-size: 1.5rem;
   padding: 1rem 0 1rem 1.4rem;
+  position: sticky;
+    top: 0;
+    background: white;
 }
 .sidebar-title {
   margin: 0.8rem 0 2rem 0rem;

@@ -7,6 +7,7 @@ const Notes = ({
   isMobile,
   display,
   setDisplay,
+  noteBtnClick
 }) => {
   return (
     <React.Fragment>
@@ -21,7 +22,7 @@ const Notes = ({
           setDisplay={setDisplay}
         />
       ) : (
-        <Home />
+        <Home noteBtnClick={noteBtnClick}  isMobile={isMobile} />
       )}
     </React.Fragment>
   );

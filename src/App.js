@@ -51,6 +51,7 @@ function App() {
           setDisplay={setDisplay}
           selectedNote={selectedNote}
           isMobile={isMobile}
+          noteBtnClick={noteBtnClick}
         />
       </div>
 

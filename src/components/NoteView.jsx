@@ -56,6 +56,7 @@ const NoteView = ({ name, color, id, isMobile, display, setDisplay }) => {
             </div>
           );
         })}
+        {notes && notes.length<=0 ? <p className="example-txt">Start Writing Notes Here!</p> : ""}
 
       <Input id={id} handleNewNote={handleNewNote} />
     </div>

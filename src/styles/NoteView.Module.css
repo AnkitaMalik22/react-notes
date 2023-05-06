@@ -1,13 +1,5 @@
 .note-view-container {
-  /* width: 40%;
-    height: 80vh;
-    right: 0;
-    overflow: scroll;
-    max-height: 56%;
-    position: relative;
-    bottom: 7%; */
-  /* 
-     */
+
   width: 73%;
   margin-left: 24rem;
   height: 80vh;
@@ -29,6 +21,10 @@
 .note {
   padding: 0.8rem 1rem;
   line-height: 1.5rem;
+}
+.example-txt{
+  padding-top: 1rem;
+  letter-spacing: 0.03em;
 }
 
 .note-view-container::-webkit-scrollbar {
