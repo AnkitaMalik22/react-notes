@@ -57,9 +57,9 @@
 }
 /* ---scrollbar---- */
 .sidebar::-webkit-scrollbar {
-  width: 0.6rem;
-
-  border-radius: 1rem;
+  /* width: 0.6rem;
+  border-radius: 1rem; */
+  display:none
 }
 
 /* .sidebar::-webkit-scrollbar-track {
